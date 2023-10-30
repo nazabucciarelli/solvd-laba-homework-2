@@ -13,8 +13,8 @@ public class Main {
 
 
         // Instantiating employees for the zoo
-        Employee vet = new Employee("30423123","John", "Doe",male,mexico,2019
-                                    ,800);
+        Employee vet = new Employee("30423123","John", "Doe",male,mexico,2019,
+                                    800);
         Employee manager = new Employee("394312940","Alvaro", "Rodriguez",male,
                                         argentina, 2021,1400);
         Employee securityGuard = new Employee("293843212","Karen","Lopez",
@@ -22,14 +22,14 @@ public class Main {
         Employee[] administrationEmployees = {vet,manager,securityGuard};
 
 
-        // Instantiang a department for the zoo
-        Department administrationDepartment =
-                new Department("Administration Department",
-                                administrationEmployees);
+        // Instantiating a department for the zoo
+        Department administrationDepartment
+                = new Department("Administration Department",
+                                 administrationEmployees);
         Department[] zooDepartments = {administrationDepartment};
 
 
-        // Instantiang feeding for each animal from the zoo
+        // Instantiating feeding for each animal from the zoo
         Feeding insects = new Feeding("Insects");
         Feeding seeds = new Feeding("Seeds");
 
@@ -40,28 +40,28 @@ public class Main {
 
 
         // Instantiating animal types for the animals
-        AnimalType amphibian = new AnimalType("Amphibian");
+        AnimalType amphibians = new AnimalType("Amphibians");
         AnimalType birds = new AnimalType("Birds");
 
 
-        // Instantiang animals for the zoo
-        Animal axolot = new Animal("Axolot",1.2D,male,wetlands,amphibian,
-                insects);
-        Animal frog = new Animal("Frog",1,female,wetlands,amphibian,insects);
+        // Instantiating animals for the zoo
+        Animal axolotl = new Animal("Axolotl",1.2D,male,wetlands,amphibians,
+                                    insects);
+        Animal frog = new Animal("Frog",1,female,wetlands,amphibians,insects);
         Animal parrot = new Animal("Parrot",2.5D,female,forest,birds,seeds);
         Animal pigeon = new Animal("Pigeon",3,male,forest,birds,seeds);
         Animal[] birdsRoomAnimals = {parrot,pigeon};
-        Animal[] amphibianRoomAnimals = {axolot,frog};
+        Animal[] amphibianRoomAnimals = {axolotl,frog};
 
 
-        // Instantiang a animal rooms for the zoo
+        // Instantiating a animal rooms for the zoo
         AnimalRoom birdsRoom = new AnimalRoom("Birds Room",birdsRoomAnimals,45);
         AnimalRoom amphibiansRoom = new AnimalRoom("Amphibians Room",
-                                    amphibianRoomAnimals,20);
+                                                    amphibianRoomAnimals,20);
         AnimalRoom[] zooAnimalRooms = {birdsRoom, amphibiansRoom};
 
 
-        // Instantiang the zoo
+        // Instantiating the zoo
         Zoo californiaZoo = new Zoo("California Zoo",zooAnimalRooms,
                                     zooDepartments);
     }
