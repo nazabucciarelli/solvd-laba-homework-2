@@ -14,7 +14,7 @@ You have to put the following command in a terminal:
 ```bash
   git clone this-repo-url
 ```
-You will need an IDE to open the project folder and, finally, run the Main.java file. You will notice that a 'out' will be created and will have the compiled files.
+You will need an IDE to open the project folder and, finally, run the Main.java file. You will notice that an 'out' folder will be created and will have the compiled files.
 
 ## Author
 
